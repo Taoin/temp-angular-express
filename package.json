@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node node_server/server.js & ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -23,7 +23,11 @@
     "@types/socket.io-client": "^1.4.29",
     "core-js": "^2.4.1",
     "rxjs": "^5.1.0",
-    "zone.js": "^0.8.4"
+    "zone.js": "^0.8.4",
+    "express": "^4.14.0",
+    "cookie-parser": "1.4.3",
+    "body-parser": "1.17.1",
+    "morgan": "1.8.1"
   },
   "devDependencies": {
     "@angular/cli": "1.0.0",
